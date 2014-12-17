@@ -1,0 +1,136 @@
+#wrapper{
+	position:relative;
+	margin:0 auto;
+	width:1024px;
+	height:1024px;
+	overflow: hidden;
+	background-image:url(../img/backgroundMain.png);
+}
+#welcome{
+	background-image: url(../img/welcome2.png);
+    height: 384px;
+    position: absolute;
+    right: -300px;
+    top: 175px;
+    width: 512px;
+    z-index: 4500;
+}
+#harkhLogo{
+	position:absolute;
+	height:89px;
+	width:218px;
+	top: 376px;
+	right: 310px;
+	display: none;
+	background-image:url(../img/harkhLogo.png);
+}
+#btn-welcome{
+	position:absolute;
+	width:200px;
+	height:87px;
+	bottom: 300px;
+	left: -220px;
+	background-image:url(../img/btn-welcome.png);
+}
+#btn-welcome:hover{cursor: pointer; opacity: 0.8;}
+#btn-bienvenido{
+	position:absolute;
+	width:200px;
+	height:87px;
+	bottom: 300px;
+	right: -220px;
+	background-image:url(../img/btn-bienvenido.png);
+}
+#btn-bienvenido:hover{cursor: pointer; opacity: 0.8;  }
+
+.backIndex{
+	left: 50%;
+    margin: 0 auto 0 -170px;
+    position: absolute;
+    top: 50%;
+}
+/*
+#welcome{
+	position:relative;
+	margin:0 auto;
+	width:1029px;
+	height:768px;
+	background-image:url(../img/welcome.png);
+	z-index:4500;
+}*/
+
+/*---------------------------------- Choosing -----------------------*/
+.choosing{
+    height: 500px;
+    margin: 245px 0 0 255px;
+    position: relative;
+    width: 500px;
+    display: block;
+}
+
+.btn-developments{position: absolute; background-image:url(../img/choosing/btn-developments.png); z-index: 2; width: 99px; height: 27px; left: 275px; top: 90px;}
+.btn-developments:hover{cursor: pointer; opacity: 0.8;  }
+.img-developments{position: absolute; background-image:url(../img/choosing/img-developments.png); z-index: 1; width: 155px; height: 106px; left: 105px; top: 45px;}
+
+.btn-video{position: absolute; background-image:url(../img/choosing/btn-video.png); z-index: 2; width: 63px; height: 28px; left: 120px; top: 270px;}
+.btn-video:hover{cursor: pointer; opacity: 0.8;  }
+.img-video{position: absolute; background-image:url(../img/choosing/img-video.png); z-index: 1; width: 188px; height: 131px; left: 115px; top: 155px;}
+
+.btn-web{position: absolute; background-image:url(../img/choosing/btn-web.png); z-index: 2; width: 64px; height: 23px; left: 235px; top: 270px;}
+.btn-web:hover{cursor: pointer; opacity: 0.8;  }
+.img-web{position: absolute; background-image:url(../img/choosing/img-web.png); z-index: 1; width: 97px; height: 187px; left: 295px; top: 130px;}
+
+.btn-graphicdesign{position: absolute; background-image:url(../img/choosing/btn-graphicdesign.png); z-index: 2; width: 83px; height: 31px; left: 330px; top: 345px;}
+.btn-graphicdesign:hover{cursor: pointer; opacity: 0.8;  }
+.img-graphicdesign{position: absolute; background-image:url(../img/choosing/img-graphicdesign.png); z-index: 1; width: 138px; height: 79px; left: 290px; top: 380px;}
+
+.btn-promotionalobjects{position: absolute; background-image:url(../img/choosing/btn-promotionalobjects.png); z-index: 2; width: 102px; height: 36px; left: 105px; top: 425px;}
+.btn-promotionalobjects:hover{cursor: pointer; opacity: 0.8;  }
+.img-promotionalobjects{position: absolute; background-image:url(../img/choosing/img-promotionalobjects.png); z-index: 1; width: 169px; height: 92px; left: 105px; top: 325px;}
+
+
+
+/*---------------------------------- Video -----------------------*/
+.video-main{
+    height: 550px;
+    margin: 215px 0 0 255px;
+    position: relative;
+    width: 500px;
+    display: none;
+}
+
+
+.btn-graph{position: absolute; background-image:url(../img/video/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
+.btn-graph:hover{cursor: pointer; opacity: 0.8;  }
+.btn-obj{position: absolute; background-image:url(../img/video/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.btn-obj:hover{cursor: pointer; opacity: 0.8;  }
+.btn-video-main{position: absolute; background-image:url(../img/video/btn-video-main.png); z-index: 2; width: 98px; height: 42px; left: 210px; top: 10px;}
+.video-main .btn-web{position: absolute; background-image:url(../img/video/btn-web.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.video-main.btn-web:hover{cursor: pointer; opacity: 0.8;  }
+.btn-dev{position: absolute; background-image:url(../img/video/btn-dev.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
+.btn-dev:hover{cursor: pointer; opacity: 0.8;  }
+.sign-video{position: absolute; background-image:url(../img/video/sign-video.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+
+.btn-videoproductions{position: absolute; background-image:url(../img/video/btn-videoproductions.png); z-index: 2; width: 92px; height: 41px; left:195px; top: 130px;}
+.img-videoproductions{position: absolute; background-image:url(../img/video/img-videoproductions.png); z-index: 1; width: 177px; height: 285px; left: 75px; top: 150px;}
+.btn-commercials{position: absolute; background-image:url(../img/video/btn-commercials.png); z-index: 2; width: 90px; height: 26px; left:350px; top: 175px;}
+.img-commercials{position: absolute; background-image:url(../img/video/img-commercials.png); z-index: 1; width: 226px; height: 186px; left: 240px; top: 200px;}
+.btn-2d3danimations{position: absolute; background-image:url(../img/video/btn-2d3danimations.png); z-index: 2; width: 83px; height: 35px; left:325px; top: 380px;}
+.img-2d3danimations{position: absolute; background-image:url(../img/video/img-2d3danimations.png); z-index: 1; width: 228px; height: 186px; left: 145px; top: 325px;}
+
+.contact-video{position: absolute; background-image:url(../img/video/contact-video.png); z-index: 1; width: 209px; height: 114px; left: 145px; top: 475px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
