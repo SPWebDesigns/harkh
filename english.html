@@ -14,19 +14,19 @@
 	<div id="wrapper">
 		<!-- Main content area -->
 		<section>
-			<div class="choosing">
-					<div class="btn-developments"></div>
+			<div class="choosing" id="choosing">
+					<div class="btn-developments comp-section" data-section="development"></div>
 					<div class="img-developments"></div>
-					<div class="btn-video"></div>
+					<div class="btn-video comp-section" data-section="video"></div>
 					<div class="img-video"></div>
-					<div class="btn-web"></div>
+					<div class="btn-web comp-section" data-section="web"></div>
 					<div class="img-web"></div>
-					<div class="btn-graphicdesign"></div>
+					<div class="btn-graphicdesign comp-section" data-section="graphic"></div>
 					<div class="img-graphicdesign"></div>
-					<div class="btn-promotionalobjects"></div>
+					<div class="btn-promotionalobjects comp-section" data-section="promotional"></div>
 					<div class="img-promotionalobjects"></div>
 			</div>
-			<div class="video-main">
+			<div class="video-main" id="video">
 					<div class="btn-graph"></div>
 					<div class="btn-obj"></div>
 					<div class="btn-video-main"></div>
@@ -49,6 +49,9 @@
 	</div>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
-	<script src="js/english.js"></script>
+	<script src="https://www.promisejs.org/polyfills/promise-done-6.0.0.min.js"></script>
+	<script src="js/animations.js"></script>
+	<script src="js/sections_handler.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
