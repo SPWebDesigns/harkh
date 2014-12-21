@@ -59,6 +59,10 @@
 	z-index:4500;
 }*/
 
+#development, #video, #web, #graphic, #promotional {
+	display: none;
+}
+
 /*---------------------------------- Choosing -----------------------*/
 .choosing{
     height: 500px;
@@ -96,7 +100,6 @@
     margin: 215px 0 0 255px;
     position: relative;
     width: 500px;
-    display: none;
 }
 
 
@@ -122,15 +125,42 @@
 
 
 
+/*---------------------------------- Development -----------------------*/
+.development-main{
+    height: 550px;
+    margin: 215px 0 0 255px;
+    position: relative;
+    width: 500px;
+}
 
 
 
+/*---------------------------------- Web -----------------------*/
+.web-main{
+    height: 550px;
+    margin: 215px 0 0 255px;
+    position: relative;
+    width: 500px;
+}
 
 
 
+/*---------------------------------- Graphic -----------------------*/
+.graphic-main{
+    height: 550px;
+    margin: 215px 0 0 255px;
+    position: relative;
+    width: 500px;
+}
 
 
 
-
+/*---------------------------------- Promotional -----------------------*/
+.promotional-main{
+    height: 550px;
+    margin: 215px 0 0 255px;
+    position: relative;
+    width: 500px;
+}
 
 

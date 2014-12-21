@@ -1,7 +1,7 @@
 /**
  * This object manage the animations for section changes
  * 
- * @returns {Object} An object with 2 methods: initialize and change
+ * @returns {Object} An object with 3 methods: initialize, change and resolvePromise
  */
 var sectionsHandler = (function(){
 	/**
@@ -19,10 +19,18 @@ var sectionsHandler = (function(){
 	var newSection;
 
 	/**
+	 * A deferred object that is responsible for managing the promises
+	 * 
+	 *  @private
+	 */
+	var defer = $.Deferred();
+
+	/**
 	 * Set the currentSection with the section shown @ page load
 	 * 
 	 *  @public
 	 *  @constructs
+	 *  @param {String} _currentSection name of the initial section shown @ page load
 	 */
 	var initialize = function(_currentSection) {
 		currentSection = _currentSection;
@@ -34,17 +42,30 @@ var sectionsHandler = (function(){
 	 * Through promises, when the current section ends to unbuild, triggers the build animation of the new section.
 	 * 
 	 *  @public
+	 *  @param {String} _newSection name of the section to be loaded
 	 */
 	var change = function(_newSection) {
 		newSection = _newSection;
-		animations[currentSection].unbuild().then(function() {
+		defer =  $.Deferred();
+		animations[currentSection].unbuild();
+		defer.then(function() {
 			currentSection = newSection;
 			animations[newSection].build();
 		});
 	};
 
+	/**
+	 * This method solves the promise of deferred object
+	 * 
+	 *  @public
+	 */
+	var resolvePromise = function() {
+		defer.resolve();
+	};
+
 	return {
 		initialize: initialize,
-		change: change
+		change: change,
+		resolvePromise: resolvePromise
 	}
 })();
