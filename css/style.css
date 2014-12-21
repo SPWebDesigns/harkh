@@ -76,11 +76,11 @@
 .btn-developments:hover{cursor: pointer; opacity: 0.8;  }
 .img-developments{position: absolute; background-image:url(../img/choosing/img-developments.png); z-index: 1; width: 155px; height: 106px; left: 105px; top: 45px;}
 
-.btn-video{position: absolute; background-image:url(../img/choosing/btn-video.png); z-index: 2; width: 63px; height: 28px; left: 120px; top: 270px;}
+.btn-video{position: absolute; background-image:url(../img/choosing/btn-choosing-video.png); z-index: 2; width: 63px; height: 28px; left: 120px; top: 270px;}
 .btn-video:hover{cursor: pointer; opacity: 0.8;  }
 .img-video{position: absolute; background-image:url(../img/choosing/img-video.png); z-index: 1; width: 188px; height: 131px; left: 115px; top: 155px;}
 
-.btn-web{position: absolute; background-image:url(../img/choosing/btn-web.png); z-index: 2; width: 64px; height: 23px; left: 235px; top: 270px;}
+.btn-web{position: absolute; background-image:url(../img/choosing/btn-choosing-web.png); z-index: 2; width: 64px; height: 23px; left: 235px; top: 270px;}
 .btn-web:hover{cursor: pointer; opacity: 0.8;  }
 .img-web{position: absolute; background-image:url(../img/choosing/img-web.png); z-index: 1; width: 97px; height: 187px; left: 295px; top: 130px;}
 
@@ -103,25 +103,25 @@
 }
 
 
-.btn-graph{position: absolute; background-image:url(../img/video/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
-.btn-graph:hover{cursor: pointer; opacity: 0.8;  }
-.btn-obj{position: absolute; background-image:url(../img/video/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
-.btn-obj:hover{cursor: pointer; opacity: 0.8;  }
-.btn-video-main{position: absolute; background-image:url(../img/video/btn-video-main.png); z-index: 2; width: 98px; height: 42px; left: 210px; top: 10px;}
-.video-main .btn-web{position: absolute; background-image:url(../img/video/btn-web.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
-.video-main.btn-web:hover{cursor: pointer; opacity: 0.8;  }
-.btn-dev{position: absolute; background-image:url(../img/video/btn-dev.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
-.btn-dev:hover{cursor: pointer; opacity: 0.8;  }
-.sign-video{position: absolute; background-image:url(../img/video/sign-video.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+.video-main .btn-graph{position: absolute; background-image:url(../img/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
+.video-main .btn-graph:hover{cursor: pointer; opacity: 0.8;  }
+.video-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.video-main .btn-obj:hover{cursor: pointer; opacity: 0.8;  }
+.video-main .btn-video-main{position: absolute; background-image:url(../img/video/btn-video-main.png); z-index: 2; width: 98px; height: 42px; left: 210px; top: 10px;}
+.video-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.video-main .btn-web:hover{cursor: pointer; opacity: 0.8;  }
+.video-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
+.video-main .btn-dev:hover{cursor: pointer; opacity: 0.8;  }
+.video-main .sign-video{position: absolute; background-image:url(../img/video/sign-video.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
 
-.btn-videoproductions{position: absolute; background-image:url(../img/video/btn-videoproductions.png); z-index: 2; width: 92px; height: 41px; left:195px; top: 130px;}
-.img-videoproductions{position: absolute; background-image:url(../img/video/img-videoproductions.png); z-index: 1; width: 177px; height: 285px; left: 75px; top: 150px;}
-.btn-commercials{position: absolute; background-image:url(../img/video/btn-commercials.png); z-index: 2; width: 90px; height: 26px; left:350px; top: 175px;}
-.img-commercials{position: absolute; background-image:url(../img/video/img-commercials.png); z-index: 1; width: 226px; height: 186px; left: 240px; top: 200px;}
-.btn-2d3danimations{position: absolute; background-image:url(../img/video/btn-2d3danimations.png); z-index: 2; width: 83px; height: 35px; left:325px; top: 380px;}
-.img-2d3danimations{position: absolute; background-image:url(../img/video/img-2d3danimations.png); z-index: 1; width: 228px; height: 186px; left: 145px; top: 325px;}
+.video-main .btn-videoproductions{position: absolute; background-image:url(../img/video/btn-videoproductions.png); z-index: 2; width: 92px; height: 41px; left:195px; top: 130px;}
+.video-main .img-videoproductions{position: absolute; background-image:url(../img/video/img-videoproductions.png); z-index: 1; width: 177px; height: 285px; left: 75px; top: 150px;}
+.video-main .btn-commercials{position: absolute; background-image:url(../img/video/btn-commercials.png); z-index: 2; width: 90px; height: 26px; left:350px; top: 175px;}
+.video-main .img-commercials{position: absolute; background-image:url(../img/video/img-commercials.png); z-index: 1; width: 226px; height: 186px; left: 240px; top: 200px;}
+.video-main .btn-2d3danimations{position: absolute; background-image:url(../img/video/btn-2d3danimations.png); z-index: 2; width: 83px; height: 35px; left:325px; top: 380px;}
+.video-main .img-2d3danimations{position: absolute; background-image:url(../img/video/img-2d3danimations.png); z-index: 1; width: 228px; height: 186px; left: 145px; top: 325px;}
 
-.contact-video{position: absolute; background-image:url(../img/video/contact-video.png); z-index: 1; width: 209px; height: 114px; left: 145px; top: 475px;}
+.video-main .contact-video{position: absolute; background-image:url(../img/video/contact-video.png); z-index: 1; width: 209px; height: 114px; left: 145px; top: 475px;}
 
 
 
@@ -133,6 +133,27 @@
     width: 500px;
 }
 
+.development-main .btn-graph{position: absolute; background-image:url(../img/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
+.development-main .btn-graph:hover{cursor: pointer; opacity: 0.8;  }
+.development-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.development-main .btn-obj:hover{cursor: pointer; opacity: 0.8;  }
+.development-main .btn-dev-main{position: absolute; background-image:url(../img/dev/btn-dev-main.png); z-index: 2; width: 97px; height: 42px; left: 210px; top: 10px;}
+.development-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.development-main .btn-web:hover{cursor: pointer; opacity: 0.8;  }
+.development-main .btn-video{position: absolute; background-image:url(../img/btn-video.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
+.development-main .btn-video:hover{cursor: pointer; opacity: 0.8;  }
+.development-main .sign-dev{position: absolute; background-image:url(../img/dev/sign-dev.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+
+.development-main .img-augmentedreality{position: absolute; background-image:url(../img/dev/img-augmentedreality.png); z-index: 1; width: 180px; height: 176px; left: 80px; top: 145px;}
+.development-main .img-mobileapps{position: absolute; background-image:url(../img/dev/img-mobileapps.png); z-index: 1; width: 113px; height: 100px; left: 245px; top: 220px;}
+.development-main .img-videogames{position: absolute; background-image:url(../img/dev/img-videogames.png); z-index: 1; width: 126px; height: 192px; left: 295px; top: 215px;}
+.development-main .img-software{position: absolute; background-image:url(../img/dev/img-software.png); z-index: 1; width: 180px; height: 153px; left: 110px; top: 315px;}
+.development-main .btn-augmentedreality{position: absolute; background-image:url(../img/dev/btn-augmentedreality.png); z-index: 2; width: 104px; height: 45px; left:155px; top: 133px;}
+.development-main .btn-mobileapps{position: absolute; background-image:url(../img/dev/btn-mobileapps.png); z-index: 2; width: 59px; height: 36px; left:295px; top: 190px;}
+.development-main .btn-videogames{position: absolute; background-image:url(../img/dev/btn-videogames.png); z-index: 2; width: 67px; height: 40px; left:370px; top: 355px;}
+.development-main .btn-software{position: absolute; background-image:url(../img/dev/btn-software.png); z-index: 2; width: 79px; height: 29px; left:215px; top: 445px;}
+
+.development-main .contact-dev{position: absolute; background-image:url(../img/dev/contact-dev.png); z-index: 1; width: 209px; height: 114px; left: 165px; top: 475px;}
 
 
 /*---------------------------------- Web -----------------------*/
@@ -143,6 +164,24 @@
     width: 500px;
 }
 
+.web-main .btn-graph{position: absolute; background-image:url(../img/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
+.web-main .btn-graph:hover{cursor: pointer; opacity: 0.8;  }
+.web-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.web-main .btn-obj:hover{cursor: pointer; opacity: 0.8;  }
+.web-main .btn-web-main{position: absolute; background-image:url(../img/web/btn-web-main.png); z-index: 2; width: 98px; height: 42px; left: 210px; top: 10px;}
+.web-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.web-main .btn-dev:hover{cursor: pointer; opacity: 0.8;  }
+.web-main .btn-video{position: absolute; background-image:url(../img/btn-video.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
+.web-main .btn-video:hover{cursor: pointer; opacity: 0.8;  }
+.web-main .sign-web{position: absolute; background-image:url(../img/web/sign-web.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+
+.web-main .img-web{position: absolute; background-image:url(../img/web/img-web.png); z-index: 1; width: 263px; height: 398px; left: 130px; top: 110px;}
+.web-main .btn-seopositioning{position: absolute; background-image:url(../img/web/btn-seopositioning.png); z-index: 2; width: 88px; height: 42px; left:305px; top: 160px;}
+.web-main .btn-webdevelopment{position: absolute; background-image:url(../img/web/btn-webdevelopment.png); z-index: 2; width: 97px; height: 43px; left:75px; top: 220px;}
+.web-main .btn-hosting{position: absolute; background-image:url(../img/web/btn-hosting.png); z-index: 2; width: 66px; height: 32px; left:370px; top: 335px;}
+.web-main .btn-ecommerce{position: absolute; background-image:url(../img/web/btn-ecommerce.png); z-index: 2; width: 103px; height: 28px; left:100px; top: 410px;}
+
+.web-main .contact-web{position: absolute; background-image:url(../img/web/contact-web.png); z-index: 1; width: 209px; height: 114px; left: 168px; top: 475px;}
 
 
 /*---------------------------------- Graphic -----------------------*/
@@ -153,7 +192,24 @@
     width: 500px;
 }
 
+.graphic-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
+.graphic-main .btn-web:hover{cursor: pointer; opacity: 0.8;  }
+.graphic-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.graphic-main .btn-obj:hover{cursor: pointer; opacity: 0.8;  }
+.graphic-main .btn-graph-main{position: absolute; background-image:url(../img/graph/btn-graph-main.png); z-index: 2; width: 97px; height: 42px; left: 210px; top: 10px;}
+.graphic-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.graphic-main .btn-dev:hover{cursor: pointer; opacity: 0.8;  }
+.graphic-main .btn-video{position: absolute; background-image:url(../img/btn-video.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
+.graphic-main .btn-video:hover{cursor: pointer; opacity: 0.8;  }
+.graphic-main .sign-graph{position: absolute; background-image:url(../img/graph/sign-graph.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
 
+.graphic-main .img-graph{position: absolute; background-image:url(../img/graph/img-graph.png); z-index: 1; width: 341px; height: 393px; left: 90px; top: 95px;}
+.graphic-main .btn-posters{position: absolute; background-image:url(../img/graph/btn-posters.png); z-index: 2; width: 64px; height: 28px; left:95px; top: 170px;}
+.graphic-main .btn-illustrations{position: absolute; background-image:url(../img/graph/btn-illustrations.png); z-index: 2; width: 93px; height: 27px; left:355px; top: 245px;}
+.graphic-main .btn-logos{position: absolute; background-image:url(../img/graph/btn-logos.png); z-index: 2; width: 57px; height: 30px; left:275px; top: 300px;}
+.graphic-main .btn-brochures{position: absolute; background-image:url(../img/graph/btn-brochures.png); z-index: 2; width: 97px; height: 33px; left:110px; top: 400px;}
+
+.graphic-main .contact-graph{position: absolute; background-image:url(../img/graph/contact-graph.png); z-index: 1; width: 209px; height: 114px; left: 165px; top: 475px;}
 
 /*---------------------------------- Promotional -----------------------*/
 .promotional-main{
@@ -163,4 +219,22 @@
     width: 500px;
 }
 
+.promotional-main .btn-graph{position: absolute; background-image:url(../img/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
+.promotional-main .btn-graph:hover{cursor: pointer; opacity: 0.8;  }
+.promotional-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.promotional-main .btn-web:hover{cursor: pointer; opacity: 0.8;  }
+.promotional-main .btn-obj-main{position: absolute; background-image:url(../img/obj/btn-obj-main.png); z-index: 2; width: 97px; height: 42px; left: 210px; top: 10px;}
+.promotional-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.promotional-main .btn-dev:hover{cursor: pointer; opacity: 0.8;  }
+.promotional-main .btn-video{position: absolute; background-image:url(../img/btn-video.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
+.promotional-main .btn-video:hover{cursor: pointer; opacity: 0.8;  }
+.promotional-main .sign-obj{position: absolute; background-image:url(../img/obj/sign-obj.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
 
+.promotional-main .img-personalizedobjects{position: absolute; background-image:url(../img/obj/img-personalizedobjects.png); z-index: 1; width: 190px; height: 194px; left: 265px; top: 135px;}
+.promotional-main .img-merchandising{position: absolute; background-image:url(../img/obj/img-merchandising.png); z-index: 1; width: 206px; height: 245px; left: 40px; top: 235px;}
+.promotional-main .img-corporategifts{position: absolute; background-image:url(../img/obj/img-corporategifts.png); z-index: 1; width: 189px; height: 144px; left: 295px; top: 335px;}
+.promotional-main .btn-personalizedobjects{position: absolute; background-image:url(../img/obj/btn-personalizedobjects.png); z-index: 2; width: 106px; height: 33px; left:180px; top: 160px;}
+.promotional-main .btn-merchandising{position: absolute; background-image:url(../img/obj/btn-merchandising.png); z-index: 2; width: 109px; height: 28px; left:170px; top: 305px;}
+.promotional-main .btn-corporategifts{position: absolute; background-image:url(../img/obj/btn-corporategifts.png); z-index: 2; width: 93px; height: 37px; left:270px; top: 430px;}
+
+.promotional-main .contact-obj{position: absolute; background-image:url(../img/obj/contact-obj.png); z-index: 1; width: 209px; height: 114px; left: 165px; top: 475px;}
