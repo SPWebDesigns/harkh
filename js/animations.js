@@ -61,7 +61,7 @@ var animations = (function(){
 				.fromTo('#development .btn-video', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#development .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
 				.to('#development .btn-video', 0.2, {scale:1},1)
-				//.fromTo('#development', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
+				.fromTo('#development', 2, {alpha:1}, {alpha: 1, onComplete: sectionsHandler.resolvePromise},2);
 		},
 
 		unbuild: function() {
@@ -102,7 +102,15 @@ var animations = (function(){
 				.fromTo('#video .btn-dev', 0.4, {scale:0.05}, {scale:1.3},0.5)
 				.to('#video .btn-dev', 0.2, {scale:1},1)
 
-				.fromTo('#video .img-videoproductions', 2, {left:-75}, {left: 75, onComplete: sectionsHandler.resolvePromise});
+				.fromTo("#video .img-2d3danimations", 0.3, {top:-410},{top:325},0.1)
+				.fromTo("#video .img-commercials", 0.2, {left:-490},{left:240},0.3)
+				.fromTo("#video .img-videoproductions", 0.2, {left:775},{left:75},0.1)
+
+				.fromTo("#video .btn-2d3danimations", 0.3, {top:-410},{top:325},0.1)
+				.fromTo("#video .btn-commercials", 0.2, {left:-490},{left:240},0.3)
+				.fromTo("#video .btn-videoproductions", 0.2, {left:775},{left:75},0.1)
+				
+				//.too('#video .img-videoproductions', 2, {alpha:1, onComplete: sectionsHandler.resolvePromise});
 		},
 
 		unbuild: function() {
@@ -141,9 +149,9 @@ var animations = (function(){
 
 				.fromTo('#web .btn-video', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#web .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
-				.to('#web .btn-video', 0.2, {scale:1},1)
+				.to('#web .btn-video', 0.2, {scale:1, onComplete: sectionsHandler.resolvePromise},1);
 
-				.fromTo('#web', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
+				//.fromTo('#web', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
 		},
 
 		unbuild: function() {
@@ -182,9 +190,9 @@ var animations = (function(){
 
 				.fromTo('#graphic .btn-video', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#graphic .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
-				.to('#graphic .btn-video', 0.2, {scale:1},1)
+				.to('#graphic .btn-video', 0.2, {scale:1, onComplete: sectionsHandler.resolvePromise},1);
 
-				.fromTo('#graphic', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
+				//.fromTo('#graphic', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
 		},
 
 		unbuild: function() {
@@ -223,9 +231,9 @@ var animations = (function(){
 
 				.fromTo('#promotional .btn-video', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#promotional .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
-				.to('#promotional .btn-video', 0.2, {scale:1},1)
+				.to('#promotional .btn-video', 0.2, {scale:1, onComplete: sectionsHandler.resolvePromise},1);
 
-				.fromTo('#promotional', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
+				//.fromTo('#promotional', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
 		},
 
 		unbuild: function() {
