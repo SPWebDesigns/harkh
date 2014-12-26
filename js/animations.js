@@ -37,7 +37,7 @@ var animations = (function(){
 		build: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#development', 0.1, {display: 'block'})
+				.to('#development', 0.1, {display: 'block', alpha:1})
 
 				.fromTo('.sign-dev', 0.2, {alpha:0}, {alpha: 1},0.1)
 				.from('.sign-dev', 0.8, {top:-435, ease:Quad.easeInOut}, 0.1)
@@ -61,13 +61,63 @@ var animations = (function(){
 				.fromTo('#development .btn-video', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#development .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
 				.to('#development .btn-video', 0.2, {scale:1},1)
-				.fromTo('#development', 2, {alpha:1}, {alpha: 1, onComplete: sectionsHandler.resolvePromise},2);
+
+				.fromTo('#development .img-augmentedreality', 0.2, {left:-450}, {left:80},0.1)
+				.fromTo('#development .img-mobileapps', 0.2, {top:-325}, {top:145},0.3)
+				.fromTo('#development .img-videogames', 0.2, {left:760}, {left:295},0.5)
+				.fromTo('#development .img-software', 0.2, {left:-450}, {left:110},0.7)
+
+				.fromTo('#development .btn-augmentedreality', 0.2, {left:-370,top:250}, {left:155,top:133},0.5)
+				.fromTo('#development .btn-mobileapps', 0.2, {left:770,top:-190}, {left:295,top:190},0.3)
+				.fromTo('#development .btn-videogames', 0.2, {left:770,top:635}, {left:370,top:355},0.1)
+				.fromTo('#development .btn-software', 0.2, {left:-340,top:575}, {left:215,top:445},0.3)
+
+
+				.fromTo('#development .contact-dev', 0.6, {alpha:0}, {alpha: 1},0.4)
+				.fromTo('#development .contact-dev', 1, {scale:0.05}, {scale:1.3},0.4)
+				.to('#development .contact-dev', 0.2, {alpha:1, scale:1,onComplete: sectionsHandler.resolvePromise},1.6);
 		},
 
 		unbuild: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#development', 2, {alpha:0})
+
+				.fromTo('.sign-dev', 0.6, {alpha:1}, {alpha: 0},0.1)
+
+				.fromTo('#development .btn-graph', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#development .btn-graph', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#development .btn-graph', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#development .btn-obj', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#development .btn-obj', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#development .btn-obj', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#development .btn-dev-main', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#development .btn-dev-main', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#development .btn-dev-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#development .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#development .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#development .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#development .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#development .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#development .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.to('#development .img-augmentedreality', 0.2, {left:780},0.1)
+				.to('#development .img-mobileapps', 0.2, {top:745},0.3)
+				.to('#development .img-videogames', 0.2, {left:-390},0.4)
+				.to('#development .img-software', 0.2, {left:780},0.7)
+
+				.to('#development .btn-augmentedreality', 0.2, {left:765},0.2)
+				.to('#development .btn-mobileapps', 0.2, {left:-320},0.4)
+				.to('#development .btn-videogames', 0.2, {left:-330},0.5)
+				.to('#development .btn-software', 0.2, {left:780},0.7)
+				
+
+				.fromTo('#development .contact-dev', 0.4, {alpha:1}, {alpha:0},0.4)
+
+				.to('#development', 0.1, {alpha:0})
 				.to('#development', 0.1, {display: 'none', onComplete: sectionsHandler.resolvePromise});
 		}
 	};
@@ -77,7 +127,7 @@ var animations = (function(){
 		build: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#video', 0.1, {display: 'block'})
+				.to('#video', 0.1, {display: 'block', alpha:1})
 				
 				.fromTo('.sign-video', 0.2, {alpha:0}, {alpha: 1},0.1)
 				.from('.sign-video', 0.8, {top:-435, ease:Quad.easeInOut}, 0.1)
@@ -106,18 +156,45 @@ var animations = (function(){
 				.fromTo("#video .img-commercials", 0.2, {left:-490},{left:240},0.3)
 				.fromTo("#video .img-videoproductions", 0.2, {left:775},{left:75},0.1)
 
-				.fromTo("#video .btn-2d3danimations", 0.3, {top:-410},{top:325},0.1)
-				.fromTo("#video .btn-commercials", 0.2, {left:-490},{left:240},0.3)
-				.fromTo("#video .btn-videoproductions", 0.2, {left:775},{left:75},0.1)
-				
+				.fromTo("#video .btn-2d3danimations", 0.2, {top:815},{top:380},0.4)
+				.fromTo("#video .btn-commercials", 0.3, {left:780},{left:350},0.4)
+				.fromTo("#video .btn-videoproductions", 0.2, {left:-360},{left:195},0.5)
+
+				.fromTo('#video .contact-video', 0.6, {alpha:0}, {alpha: 1},0.4)
+				.fromTo('#video .contact-video', 1, {scale:0.05}, {scale:1.3},0.4)
+				.to('#video .contact-video', 0.2, {alpha:1, scale:1,onComplete: sectionsHandler.resolvePromise},1.6)
 				//.too('#video .img-videoproductions', 2, {alpha:1, onComplete: sectionsHandler.resolvePromise});
 		},
 
 		unbuild: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#video', 2, {alpha:0})
+
+				.fromTo('.sign-video', 0.6, {alpha:1}, {alpha: 0},0.1)
+
+				.fromTo('#video .btn-graph', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#video .btn-graph', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#video .btn-graph', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#video .btn-obj', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#video .btn-obj', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#video .btn-obj', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#video .btn-video-main', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#video .btn-video-main', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#video .btn-video-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#video .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#video .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#video .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#video .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#video .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#video .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.to('#video', 0.1, {alpha:0})
 				.to('#video', 0.1, {display:'none', onComplete: sectionsHandler.resolvePromise});
+
 		}
 	};
 
@@ -126,7 +203,7 @@ var animations = (function(){
 		build: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#web', 0.1, {display: 'block'})
+				.to('#web', 0.1, {display: 'block', alpha:1})
 
 				.fromTo('.sign-web', 0.2, {alpha:0}, {alpha: 1},0.1)
 				.from('.sign-web', 0.8, {top:-435, ease:Quad.easeInOut}, 0.1)
@@ -167,7 +244,7 @@ var animations = (function(){
 		build: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#graphic', 0.1, {display: 'block'})
+				.to('#graphic', 0.1, {display: 'block', alpha:1})
 
 				.fromTo('.sign-graph', 0.2, {alpha:0}, {alpha: 1},0.1)
 				.from('.sign-graph', 0.8, {top:-435, ease:Quad.easeInOut}, 0.1)
@@ -208,7 +285,7 @@ var animations = (function(){
 		build: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#promotional', 0.1, {display: 'block'})
+				.to('#promotional', 0.1, {display: 'block', alpha:1})
 
 				.fromTo('.sign-obj', 0.2, {alpha:0}, {alpha: 1},0.1)
 				.from('.sign-obj', 0.8, {top:-435, ease:Quad.easeInOut}, 0.1)
