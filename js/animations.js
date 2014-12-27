@@ -64,7 +64,7 @@ var animations = (function(){
 
 				.fromTo('#development .img-augmentedreality', 0.2, {left:-450}, {left:80},0.1)
 				.fromTo('#development .img-mobileapps', 0.2, {top:-325}, {top:145},0.3)
-				.fromTo('#development .img-videogames', 0.2, {left:760}, {left:295},0.5)
+				.fromTo('#development .img-videogames', 0.2, {left:780}, {left:295},0.5)
 				.fromTo('#development .img-software', 0.2, {left:-450}, {left:110},0.7)
 
 				.fromTo('#development .btn-augmentedreality', 0.2, {left:-370,top:250}, {left:155,top:133},0.5)
@@ -152,18 +152,18 @@ var animations = (function(){
 				.fromTo('#video .btn-dev', 0.4, {scale:0.05}, {scale:1.3},0.5)
 				.to('#video .btn-dev', 0.2, {scale:1},1)
 
-				.fromTo("#video .img-2d3danimations", 0.3, {top:-410},{top:325},0.1)
-				.fromTo("#video .img-commercials", 0.2, {left:-490},{left:240},0.3)
-				.fromTo("#video .img-videoproductions", 0.2, {left:775},{left:75},0.1)
+				.fromTo("#video .img-2d3danimations", 0.3, {top:-410},{top:325, left:145},0.1)
+				.fromTo("#video .img-commercials", 0.2, {left:-490},{left:240, top:200},0.3)
+				.fromTo("#video .img-videoproductions", 0.2, {left:775},{left:75, top:150},0.1)
 
-				.fromTo("#video .btn-2d3danimations", 0.2, {top:815},{top:380},0.4)
-				.fromTo("#video .btn-commercials", 0.3, {left:780},{left:350},0.4)
-				.fromTo("#video .btn-videoproductions", 0.2, {left:-360},{left:195},0.5)
+				.fromTo("#video .btn-2d3danimations", 0.2, {top:815},{top:380, left:325},0.4)
+				.fromTo("#video .btn-commercials", 0.3, {left:780},{left:350, top:175},0.4)
+				.fromTo("#video .btn-videoproductions", 0.2, {left:-360},{left:195, top:130},0.5)
 
 				.fromTo('#video .contact-video', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#video .contact-video', 1, {scale:0.05}, {scale:1.3},0.4)
-				.to('#video .contact-video', 0.2, {alpha:1, scale:1,onComplete: sectionsHandler.resolvePromise},1.6)
-				//.too('#video .img-videoproductions', 2, {alpha:1, onComplete: sectionsHandler.resolvePromise});
+				.to('#video .contact-video', 0.2, {alpha:1, scale:1,onComplete: sectionsHandler.resolvePromise},1.6);
+				
 		},
 
 		unbuild: function() {
@@ -191,6 +191,16 @@ var animations = (function(){
 				.fromTo('#video .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
 				.fromTo('#video .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
 				.fromTo('#video .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.to("#video .img-2d3danimations", 0.4, {top:0, left:-500},0.1)
+				.to("#video .img-commercials", 0.4, {left:0, top:-420},0.3)
+				.to("#video .img-videoproductions", 0.2, {left:715, top:780},0.1)
+
+				.to("#video .btn-2d3danimations", 0.4, {top:815, left:-360},0.5)
+				.to("#video .btn-commercials", 0.3, {left:780, top:-250},0.5)
+				.to("#video .btn-videoproductions", 0.5, {left:-360,top:600},0.2)
+
+				.fromTo('#video .contact-video', 0.4, {alpha:1}, {alpha:0},0.3)
 
 				.to('#video', 0.1, {alpha:0})
 				.to('#video', 0.1, {display:'none', onComplete: sectionsHandler.resolvePromise});
@@ -226,15 +236,58 @@ var animations = (function(){
 
 				.fromTo('#web .btn-video', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#web .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
-				.to('#web .btn-video', 0.2, {scale:1, onComplete: sectionsHandler.resolvePromise},1);
+				.to('#web .btn-video', 0.2, {scale:1},1)
 
-				//.fromTo('#web', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
+				.to("#web .img-web", 0.5, {top:110},0.1)
+				.fromTo("#web .img-web", 0.5, {alpha:0},{alpha:1},0.1)
+				.fromTo("#web .img-web", 0.8, { rotation:0, ease:Linear.easeNone,yoyo:true },{ rotation:360, ease:Linear.easeNone,yoyo:true },0.1)
+
+				.fromTo("#web .btn-seopositioning", 0.2, {left:780},{left:305},0.1)
+				.fromTo("#web .btn-webdevelopment", 0.2, {left:-360},{left:75},0.3)
+				.fromTo("#web .btn-hosting", 0.2, {left:780},{left:370},0.5)
+				.fromTo("#web .btn-ecommerce", 0.2, {left:-370},{left:100},0.7)
+
+				.fromTo('#web .contact-web', 0.6, {alpha:0}, {alpha: 1},0.4)
+				.fromTo('#web .contact-web', 1, {scale:0.05}, {scale:1.3},0.4)
+				.to('#web .contact-web', 0.2, {alpha:1, scale:1,onComplete: sectionsHandler.resolvePromise},1.6);
 		},
 
 		unbuild: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#web', 2, {alpha:0})
+
+				.fromTo('.sign-web', 0.6, {alpha:1}, {alpha: 0},0.1)
+
+				.fromTo('#web .btn-graph', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#web .btn-graph', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#web .btn-graph', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#web .btn-obj', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#web .btn-obj', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#web .btn-obj', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#web .btn-web-main', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#web .btn-web-main', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#web .btn-web-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#web .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#web .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#web .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#web .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#web .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#web .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.to("#web .img-web", 0.5, {top:-630, ease:Bounce.easeIn},0.1)
+
+				.to("#web .btn-seopositioning", 0.2, {left:780},0.1)
+				.to("#web .btn-webdevelopment", 0.2, {left:-360},0.3)
+				.to("#web .btn-hosting", 0.2, {left:780},0.5)
+				.to("#web .btn-ecommerce", 0.2, {left:-370},0.7)
+
+				.fromTo('#web .contact-web', 0.4, {alpha:1}, {alpha:0},0.3)
+
+				.to('#web', 0.1, {alpha:0})
 				.to('#web', 0.1, {display: 'none', onComplete: sectionsHandler.resolvePromise});
 		}
 	};
@@ -247,7 +300,6 @@ var animations = (function(){
 				.to('#graphic', 0.1, {display: 'block', alpha:1})
 
 				.fromTo('.sign-graph', 0.2, {alpha:0}, {alpha: 1},0.1)
-				.from('.sign-graph', 0.8, {top:-435, ease:Quad.easeInOut}, 0.1)
 
 				.fromTo('#graphic .btn-web', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#graphic .btn-web', 0.4, {scale:0.05}, {scale:1.3},0.5)
@@ -267,20 +319,59 @@ var animations = (function(){
 
 				.fromTo('#graphic .btn-video', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#graphic .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
-				.to('#graphic .btn-video', 0.2, {scale:1, onComplete: sectionsHandler.resolvePromise},1);
+				.to('#graphic .btn-video', 0.2, {scale:1},1)
 
-				//.fromTo('#graphic', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
+				.fromTo("#graphic .img-graph", 0.5, {top:-560},{top:90},0.1)
+
+				.fromTo("#graphic .btn-posters", 0.7, {top:815},{top:170},0.1)
+				.fromTo("#graphic .btn-illustrations", 0.7, {top:815},{top:245},0.3)
+				.fromTo("#graphic .btn-logos", 0.7, {top:815},{top:300},0.5)
+				.fromTo("#graphic .btn-brochures", 0.7, {top:815},{top:400},0.7)
+	
+				.fromTo('#graphic .contact-graph', 0.6, {alpha:0}, {alpha: 1},0.4)
+				.fromTo('#graphic .contact-graph', 1, {scale:0.05}, {scale:1.3},0.4)
+				.to('#graphic .contact-graph', 0.2, {alpha:1, scale:1,onComplete: sectionsHandler.resolvePromise},1.6);
 		},
 
 		unbuild: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#graphic', 2, {alpha:0})
+				.fromTo('.sign-graph', 0.6, {alpha:1}, {alpha: 0},0.1)
+
+				.fromTo('#graphic .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#graphic .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#graphic .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#graphic .btn-obj', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#graphic .btn-obj', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#graphic .btn-obj', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#graphic .btn-graph-main', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#graphic .btn-graph-main', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#graphic .btn-graph-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#graphic .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#graphic .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#graphic .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#graphic .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#graphic .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#graphic .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.to("#graphic .img-graph", 0.6, {top:-560},0.2)
+
+				.to("#graphic .btn-posters", 0.7, {top:815},0.1)
+				.to("#graphic .btn-illustrations", 0.7, {top:815},0.3)
+				.to("#graphic .btn-logos", 0.7, {top:815},0.5)
+				.to("#graphic .btn-brochures", 0.7, {top:815},0.7)
+
+				.fromTo('#graphic .contact-graph', 0.4, {alpha:1}, {alpha:0},0.3)
+
+				.to('#graphic', 0.1, {alpha:0})
 				.to('#graphic', 0.1, {display: 'none', onComplete: sectionsHandler.resolvePromise});
 		}
 	};
-
-
+//
 	var promotional = {
 		build: function() {
 			var tl = new TimelineMax();
@@ -288,7 +379,6 @@ var animations = (function(){
 				.to('#promotional', 0.1, {display: 'block', alpha:1})
 
 				.fromTo('.sign-obj', 0.2, {alpha:0}, {alpha: 1},0.1)
-				.from('.sign-obj', 0.8, {top:-435, ease:Quad.easeInOut}, 0.1)
 
 				.fromTo('#promotional .btn-graph', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#promotional .btn-graph', 0.4, {scale:0.05}, {scale:1.3},0.5)
@@ -308,15 +398,58 @@ var animations = (function(){
 
 				.fromTo('#promotional .btn-video', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#promotional .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
-				.to('#promotional .btn-video', 0.2, {scale:1, onComplete: sectionsHandler.resolvePromise},1);
+				.to('#promotional .btn-video', 0.2, {scale:1},1)
 
-				//.fromTo('#promotional', 2, {alpha:0}, {alpha: 1, onComplete: sectionsHandler.resolvePromise});
+				.fromTo("#promotional .img-personalizedobjects", 0.4, {left:780},{scale:1,left:265, ease:Back.easeOut},0.2)
+				.fromTo("#promotional .img-merchandising", 0.4, {left:-480},{scale:1,left:40, ease:Back.easeOut},0.3)
+				.fromTo("#promotional .img-corporategifts", 0.4, {left:775},{scale:1,left:295, ease:Back.easeOut},0.5)
+
+				.fromTo("#promotional .btn-personalizedobjects", 0.4, {left:780},{scale:1,left:180, ease:Back.easeOut},0.2)
+				.fromTo("#promotional .btn-merchandising", 0.4, {left:-370},{scale:1,left:170, ease:Back.easeOut},0.3)
+				.fromTo("#promotional .btn-corporategifts", 0.4, {left:770},{scale:1,left:270, ease:Back.easeOut},0.5)
+
+
+				.fromTo('#promotional .contact-obj', 0.6, {alpha:0}, {alpha: 1},0.4)
+				.fromTo('#promotional .contact-obj', 1, {scale:0.05}, {scale:1.3},0.4)
+				.to('#promotional .contact-obj', 0.2, {alpha:1, scale:1,onComplete: sectionsHandler.resolvePromise},1.6);
 		},
 
 		unbuild: function() {
 			var tl = new TimelineMax();
 			tl
-				.to('#promotional', 2, {alpha:0})
+				.fromTo('.sign-web', 0.6, {alpha:1}, {alpha: 0},0.1)
+
+				.fromTo('#promotional .btn-graph', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#promotional .btn-graph', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#promotional .btn-graph', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#promotional .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#promotional .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#promotional .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#promotional .btn-obj-main', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#promotional .btn-obj-main', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#promotional .btn-obj-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#promotional .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#promotional .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#promotional .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.fromTo('#promotional .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#promotional .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#promotional .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
+
+				.to("#promotional .img-personalizedobjects", 0.7, {scale: 0},0.2)
+				.to("#promotional .img-merchandising", 0.7,{scale: 0},0.3)
+				.to("#promotional .img-corporategifts", 0.7, {scale: 0},0.4)
+
+				.to("#promotional .btn-personalizedobjects", 0.7, {scale: 0},0.2)
+				.to("#promotional .btn-merchandising", 0.7,{scale: 0},0.3)
+				.to("#promotional .btn-corporategifts", 0.7, {scale: 0},0.4)
+
+				.fromTo('#promotional .contact-web', 0.4, {alpha:1}, {alpha:0},0.3)
+
+				.to('#promotional', 0.1, {alpha:0})
 				.to('#promotional', 0.1, {display: 'none', onComplete: sectionsHandler.resolvePromise});
 		}
 	};
