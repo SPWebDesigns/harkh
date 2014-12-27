@@ -121,10 +121,37 @@
 .video-main .btn-2d3danimations{position: absolute; background-image:url(../img/video/btn-2d3danimations.png); z-index: 2; width: 83px; height: 35px; left:325px; top: 380px;}
 .video-main .img-2d3danimations{position: absolute; background-image:url(../img/video/img-2d3danimations.png); z-index: 1; width: 228px; height: 186px; left: 145px; top: 325px;}
 
-.video-main .contact-video{position: absolute; background-image:url(../img/video/contact-video.png); z-index: 1; width: 209px; height: 114px; left: 145px; top: 475px;}
+.video-main .contact-video{position: absolute; background-image:url(../img/video/contact-video.png);  width: 209px; height: 114px; left: 145px; top: 475px;}
+.video-main .contact-video:hover{cursor: pointer;opacity: 0.7;}
+#contact-us-page{position: absolute; display:none; background-color: #fff; z-index: 1002;width:510px; height:522px; top:245px;left:260px;background-image:url(../img/video/contact-us-video.png);}
 
 
-
+.overlay{
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #000;
+     z-index:1001;
+     opacity:.75;
+     -moz-opacity: 0.75;
+     filter: alpha(opacity=75);
+}
+.modals {
+     display: none;
+     position: absolute;
+     top: 25%;
+     left: 25%;
+     width: 50%;
+     height: 50%;
+     padding: 16px;
+     background: #fff;
+     color: #333;
+     z-index:1002;
+     overflow: auto;
+}
 /*---------------------------------- Development -----------------------*/
 .development-main{
     height: 550px;
