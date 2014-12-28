@@ -122,36 +122,8 @@
 .video-main .img-2d3danimations{position: absolute; background-image:url(../img/video/img-2d3danimations.png); z-index: 1; width: 228px; height: 186px; left: 145px; top: 325px;}
 
 .video-main .contact-video{position: absolute; background-image:url(../img/video/contact-video.png);  width: 209px; height: 114px; left: 145px; top: 475px;}
-.video-main .contact-video:hover{cursor: pointer;opacity: 0.7;}
-#contact-us-page{position: absolute; display:none; background-color: #fff; z-index: 1002;width:510px; height:522px; top:245px;left:260px;background-image:url(../img/video/contact-us-video.png);}
+.video-main .contact-video:hover{cursor: pointer;}
 
-
-.overlay{
-     display: block;
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: #000;
-     z-index:1001;
-     opacity:.75;
-     -moz-opacity: 0.75;
-     filter: alpha(opacity=75);
-}
-.modals {
-     display: none;
-     position: absolute;
-     top: 25%;
-     left: 25%;
-     width: 50%;
-     height: 50%;
-     padding: 16px;
-     background: #fff;
-     color: #333;
-     z-index:1002;
-     overflow: auto;
-}
 /*---------------------------------- Development -----------------------*/
 .development-main{
     height: 550px;
@@ -181,7 +153,7 @@
 .development-main .btn-software{position: absolute; background-image:url(../img/dev/btn-software.png); z-index: 2; width: 79px; height: 29px; left:215px; top: 445px;}
 
 .development-main .contact-dev{position: absolute; background-image:url(../img/dev/contact-dev.png); z-index: 1; width: 209px; height: 114px; left: 165px; top: 475px;}
-
+.development-main .contact-dev:hover{cursor: pointer;}
 
 /*---------------------------------- Web -----------------------*/
 .web-main{
@@ -209,7 +181,7 @@
 .web-main .btn-ecommerce{position: absolute; background-image:url(../img/web/btn-ecommerce.png); z-index: 2; width: 103px; height: 28px; left:100px; top: 410px;}
 
 .web-main .contact-web{position: absolute; background-image:url(../img/web/contact-web.png); z-index: 1; width: 209px; height: 114px; left: 168px; top: 475px;}
-
+.web-main .contact-web:hover{cursor: pointer;}
 
 /*---------------------------------- Graphic -----------------------*/
 .graphic-main{
@@ -237,6 +209,7 @@
 .graphic-main .btn-brochures{position: absolute; background-image:url(../img/graph/btn-brochures.png); z-index: 2; width: 97px; height: 33px; left:110px; top: 400px;}
 
 .graphic-main .contact-graph{position: absolute; background-image:url(../img/graph/contact-graph.png); z-index: 1; width: 209px; height: 114px; left: 165px; top: 475px;}
+.graphic-main .contact-graph:hover{cursor: pointer;}
 
 /*---------------------------------- Promotional -----------------------*/
 .promotional-main{
@@ -265,3 +238,44 @@
 .promotional-main .btn-corporategifts{position: absolute; background-image:url(../img/obj/btn-corporategifts.png); z-index: 2; width: 93px; height: 37px; left:270px; top: 430px;}
 
 .promotional-main .contact-obj{position: absolute; background-image:url(../img/obj/contact-obj.png); z-index: 1; width: 209px; height: 114px; left: 165px; top: 475px;}
+.promotional-main .contact-obj:hover{cursor: pointer;}
+
+/*---------------------------------------------------------*/
+
+#contact-us-page{position: absolute; display:none; background-color: #fff; z-index: 1002;width:510px; height:522px; top:245px;left:260px;}
+.contact-btn-close{position: absolute; width:42px; height:42px; top:-21px; right:-21px;background-image:url(../img/contact-us/btn-close.png);}
+.contact-btn-close:hover{cursor: pointer;}
+.name{left: 150px; position: absolute; top: 178px;}
+.name input{height: 10px;}
+.mail{left: 150px; position: absolute; top: 198px;}
+.mail input{height: 10px;}
+.message{left: 75px; position: absolute; top: 240px;}
+.message textarea{width:235px; height: 80px; }
+.submit{left: 155px; position: absolute; top: 378px; width: 74px; height: 36px; background-image:url(../img/contact-us/contact-submit.png);}
+.submit:hover{cursor: pointer;}
+.overlay{
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #000;
+     z-index:1001;
+     opacity:.75;
+     -moz-opacity: 0.75;
+     filter: alpha(opacity=75);
+}
+.modals {
+     display: none;
+     position: absolute;
+     top: 25%;
+     left: 25%;
+     width: 50%;
+     height: 50%;
+     padding: 16px;
+     background: #fff;
+     color: #333;
+     z-index:1002;
+     overflow: auto;
+}
