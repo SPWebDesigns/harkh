@@ -240,7 +240,7 @@
 .promotional-main .contact-obj{position: absolute; background-image:url(../img/obj/contact-obj.png); z-index: 1; width: 209px; height: 114px; left: 165px; top: 475px;}
 .promotional-main .contact-obj:hover{cursor: pointer;}
 
-/*---------------------------------------------------------*/
+/*---------------------------- Contact-us Page -----------------------------*/
 
 #contact-us-page{position: absolute; display:none; background-color: #fff; z-index: 1002;width:510px; height:522px; top:245px;left:260px;}
 .contact-btn-close{position: absolute; width:42px; height:42px; top:-21px; right:-21px;background-image:url(../img/contact-us/btn-close.png);}
@@ -266,6 +266,27 @@
      -moz-opacity: 0.75;
      filter: alpha(opacity=75);
 }
+.modals {
+     display: none;
+     position: absolute;
+     top: 25%;
+     left: 25%;
+     width: 50%;
+     height: 50%;
+     padding: 16px;
+     background: #fff;
+     color: #333;
+     z-index:1002;
+     overflow: auto;
+}
+
+
+/*---------------------------- Gallery Page -----------------------------*/
+
+#gallery-page{position: absolute; display:none; background-color: #fff; z-index: 1002;width:375px; height:235px; top:345px;left:320px;}
+.gallery-btn-close{position: absolute; width:42px; height:42px; top:-21px; right:-21px;background-image:url(../img/gallery/btn-close.png);}
+.gallery-btn-close:hover{cursor: pointer;}
+
 .modals {
      display: none;
      position: absolute;
