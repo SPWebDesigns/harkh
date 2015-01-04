@@ -63,7 +63,7 @@ var animations = (function(){
 				.to('#development .btn-video', 0.2, {scale:1},1)
 
 				.fromTo('#development .img-augmentedreality', 0.2, {left:-450}, {left:80},0.1)
-				.fromTo('#development .img-mobileapps', 0.2, {top:-325}, {top:145},0.3)
+				.fromTo('#development .img-mobileapps', 0.2, {top:-325}, {top:215},0.3)
 				.fromTo('#development .img-videogames', 0.2, {left:780}, {left:295},0.5)
 				.fromTo('#development .img-software', 0.2, {left:-450}, {left:110},0.7)
 
@@ -238,9 +238,7 @@ var animations = (function(){
 				.fromTo('#web .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
 				.to('#web .btn-video', 0.2, {scale:1},1)
 
-				.to("#web .img-web", 0.5, {top:110},0.1)
-				.fromTo("#web .img-web", 0.5, {alpha:0},{alpha:1},0.1)
-				.fromTo("#web .img-web", 0.8, { rotation:0, ease:Linear.easeNone,yoyo:true },{ rotation:360, ease:Linear.easeNone,yoyo:true },0.1)
+				.fromTo("#web .img-web", 0.6, {alpha:0},{alpha:1},0.1)
 
 				.fromTo("#web .btn-seopositioning", 0.2, {left:780},{left:305},0.1)
 				.fromTo("#web .btn-webdevelopment", 0.2, {left:-360},{left:75},0.3)
@@ -270,15 +268,15 @@ var animations = (function(){
 				.fromTo('#web .btn-web-main', 0.4, {scale:1.3}, {scale:0},0.4)
 				.fromTo('#web .btn-web-main', 0.1, {alpha:1}, {alpha: 0},0.9)
 
-				.fromTo('#web .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#web .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#web .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#web .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
+				.fromTo('#web .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
+				.fromTo('#web .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
 
 				.fromTo('#web .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
 				.fromTo('#web .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
 				.fromTo('#web .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
 
-				.to("#web .img-web", 0.5, {top:-630, ease:Bounce.easeIn},0.1)
+				.to("#web .img-web", 0.5, {alpha:0},0.1)
 
 				.to("#web .btn-seopositioning", 0.2, {left:780},0.1)
 				.to("#web .btn-webdevelopment", 0.2, {left:-360},0.3)
@@ -453,7 +451,40 @@ var animations = (function(){
 				.to('#promotional', 0.1, {display: 'none', onComplete: sectionsHandler.resolvePromise});
 		}
 	};
+	var contact = {
+		build: function() {
+			var tl = new TimelineMax();
+			tl
+				.to('#contact', 0.1, {display: 'block', alpha:1})
 
+				.fromTo('#contact .poster', 0.3, {left: 55, top: -390}, {left: 55, top: 35},0.1)
+				.fromTo('#contact .cartel', 0.4, {left: -610, top: 570}, {left: 15, top: 190},0.2)
+				.fromTo('#contact .submit', 0.4, {alpha:0}, {alpha:1, onComplete: sectionsHandler.resolvePromise},0.7)
+				.fromTo('#contact .branch', 0.3, {left: 430, top: 815}, {left: 430, top: 380},0.3)
+				.fromTo('#contact .btn-contact-promotional', 0.2, {left: 790, top: 475}, {left: 370, top: 475},0.5)
+				.fromTo('#contact .btn-contact-web', 0.2, {left: 790, top: 370}, {left: 430, top: 370},0.5)
+				.fromTo('#contact .btn-contact-video', 0.2, {left: 790, top: 395}, {left: 375, top: 395},0.6)
+				.fromTo('#contact .btn-contact-development', 0.2, {left: 790, top: 424}, {left: 430, top: 424},0.6)
+				.fromTo('#contact .btn-contact-graphic', 0.2, {left: 790, top: 437}, {left: 343, top: 437},0.6);
+		},
+
+		unbuild: function() {
+			var tl = new TimelineMax();
+			tl
+				.to('#contact .poster', 0.1, {left: 55, top: -390},0.1)
+				.to('#contact .cartel', 0.4, {left: -610, top: 570},0.3)
+				.to('#contact .submit', 0.4, {alpha:0}, {alpha:1},0.8)
+				.to('#contact .branch', 0.3, {left: 430, top: 815},0.4)
+				.to('#contact .btn-contact-promotional', 0.2, {left: 790, top: 475},0.6)
+				.to('#contact .btn-contact-web', 0.2, {left: 790, top: 370},0.5)
+				.to('#contact .btn-contact-video', 0.2, {left: 790, top: 395},0.6)
+				.to('#contact .btn-contact-development', 0.2, {left: 790, top: 424},0.6)
+				.to('#contact .btn-contact-graphic', 0.2, {left: 790, top: 437},0.6)
+
+				.to('#contact', 0.1, {alpha:0})
+				.to('#contact', 0.1, {display: 'none', onComplete: sectionsHandler.resolvePromise});
+		}
+	};
 
 	return {
 		choosing: choosing,
@@ -461,7 +492,8 @@ var animations = (function(){
 		video: video,
 		web: web,
 		graphic: graphic,
-		promotional: promotional
+		promotional: promotional,
+		contact: contact
 	}
 
 })();

@@ -4,7 +4,7 @@
 	width:1024px;
 	height:1024px;
 	overflow: hidden;
-	background-image:url(../img/backgroundMain.png);
+	background-image:url(../img/backgroundMain.jpg);
 }
 #welcome{
 	background-image: url(../img/welcome2.png);
@@ -49,15 +49,6 @@
     position: absolute;
     top: 50%;
 }
-/*
-#welcome{
-	position:relative;
-	margin:0 auto;
-	width:1029px;
-	height:768px;
-	background-image:url(../img/welcome.png);
-	z-index:4500;
-}*/
 
 #development, #video, #web, #graphic, #promotional {
 	display: none;
@@ -240,19 +231,40 @@
 .promotional-main .contact-obj{position: absolute; background-image:url(../img/obj/contact-obj.png); z-index: 1; width: 209px; height: 114px; left: 165px; top: 475px;}
 .promotional-main .contact-obj:hover{cursor: pointer;}
 
-/*---------------------------- Contact-us Page -----------------------------*/
+/*---------------------------- Contact Page -----------------------------*/
+#contact{
+    height: 550px;
+    margin: 215px 0 0 255px;
+    position: relative;
+    width: 500px;
+    display: none;
+}
+#contact .poster{position: absolute; background-image:url(../img/contact-us/poster-video.png); z-index: 1; width: 415px; height: 156px; left: 55px; top: 35px;}
+#contact .cartel{position: absolute; background-image:url(../img/contact-us/contact-cartel.png); z-index: 1; width: 345px; height: 360px; left: 15px; top: 190px;}
+#contact .branch{position: absolute; background-image:url(../img/contact-us/branch.png); z-index: 1; width: 12px; height: 170px; left: 430px; top: 380px;}
+#contact .btn-contact-promotional{position: absolute; background-image:url(../img/contact-us/btn-contact-promotional.png); z-index: 1; width: 73px; height: 40px; left: 370px; top: 430px;}
+#contact .btn-contact-web{position: absolute; background-image:url(../img/contact-us/btn-contact-web.png); z-index: 1; width: 66px; height: 35px; left: 430px; top: 385px;}
+#contact .btn-contact-video{position: absolute; background-image:url(../img/contact-us/btn-contact-video.png); z-index: 1; width: 74px; height: 39px; left: 375px; top: 405px;}
+#contact .btn-contact-development{position: absolute; background-image:url(../img/contact-us/btn-contact-development.png); z-index: 1; width: 108px; height: 34px; left: 430px; top: 424px;}
+#contact .btn-contact-graphic{position: absolute; background-image:url(../img/contact-us/btn-contact-graphic.png); z-index: 1; width: 108px; height: 36px; left: 343px; top: 437px;}
 
-#contact-us-page{position: absolute; display:none; background-color: #fff; z-index: 1002;width:510px; height:522px; top:245px;left:260px;}
-.contact-btn-close{position: absolute; width:42px; height:42px; top:-21px; right:-21px;background-image:url(../img/contact-us/btn-close.png);}
-.contact-btn-close:hover{cursor: pointer;}
-.name{left: 150px; position: absolute; top: 178px;}
-.name input{height: 10px;}
-.mail{left: 150px; position: absolute; top: 198px;}
-.mail input{height: 10px;}
-.message{left: 75px; position: absolute; top: 240px;}
-.message textarea{width:235px; height: 80px; }
-.submit{left: 155px; position: absolute; top: 378px; width: 74px; height: 36px; background-image:url(../img/contact-us/contact-submit.png);}
-.submit:hover{cursor: pointer;}
+#contact .name{left: 150px; position: absolute; top: 178px;}
+#contact .name input{height: 10px;}
+#contact .mail{left: 150px; position: absolute; top: 198px;}
+#contact .mail input{height: 10px;}
+#contact .message{left: 75px; position: absolute; top: 240px;}
+#contact .message textarea{width:235px; height: 80px; }
+#contact .submit{position: absolute; top: 430px; left: 145px; width: 74px; height: 36px; z-index: 1; background-image:url(../img/contact-us/contact-submit.png);}
+#contact .submit:hover{cursor: pointer;}
+
+
+
+/*---------------------------- Gallery Page -----------------------------*/
+
+#gallery-page{position: absolute; display:none; z-index: 1002;width:375px; height:235px; top:345px;left:305px;}
+.gallery-btn-close{position: absolute; width:42px; height:42px; top:-21px; right:-44px; z-index: 2; background-image:url(../img/gallery/btn-close.png);}
+.gallery-btn-close:hover{cursor: pointer;}
+
 .overlay{
      display: block;
      position: absolute;
@@ -266,27 +278,6 @@
      -moz-opacity: 0.75;
      filter: alpha(opacity=75);
 }
-.modals {
-     display: none;
-     position: absolute;
-     top: 25%;
-     left: 25%;
-     width: 50%;
-     height: 50%;
-     padding: 16px;
-     background: #fff;
-     color: #333;
-     z-index:1002;
-     overflow: auto;
-}
-
-
-/*---------------------------- Gallery Page -----------------------------*/
-
-#gallery-page{position: absolute; display:none; background-color: #fff; z-index: 1002;width:375px; height:235px; top:345px;left:320px;}
-.gallery-btn-close{position: absolute; width:42px; height:42px; top:-21px; right:-21px;background-image:url(../img/gallery/btn-close.png);}
-.gallery-btn-close:hover{cursor: pointer;}
-
 .modals {
      display: none;
      position: absolute;
