@@ -11,13 +11,34 @@
 	<div id="wrapper">
 		<div id="gallery-page">
 			<div class="gallery-btn-close"></div>
+			<div class="gallery-content"></div>
+		</div>
+		<div id="gallery-page-graph">
+			<div class="gallery-btn-close"></div>
+			
 			<ul id="slider">
-				<li><img src="http://placehold.it/300x200" alt="" /></li>
-				<li><img src="http://placehold.it/300x200" alt="" /></li>
-				<li><img src="http://placehold.it/300x200" alt="" /></li>
-				<li><img src="http://placehold.it/300x200" alt="" /></li>
-				<li><img src="http://placehold.it/300x200" alt="" /></li>
-			</ul>
+				<li><img src="img/gallery/graphic/posters/01.jpg" /></li>
+				<li><img src="img/gallery/graphic/posters/02.jpg" /></li>
+				<li><img src="img/gallery/graphic/posters/03.jpg" /></li>
+				<li><img src="img/gallery/graphic/posters/04.jpg" /></li>
+				<li><img src="img/gallery/graphic/posters/05.jpg" /></li>
+			</ul> 
+		</div>
+		<div id="gallery-page-video">
+			<div class="gallery-btn-close"></div>
+			<div class="gallery-content">
+				<object classid='video'
+			        width="420" height="260">
+			        <param name='autoplay' value="false">
+			        <param name='controller' value="true">
+			        <param name='loop' value="false">
+			        <embed id="video-emb" src="img\gallery\video\2d3danimations.mp4" width="420" height="260"
+			        scale="tofit" autoplay="false"
+			        controller="true" loop="false" bgcolor="#000000">
+			        </embed>
+			    </object>     
+
+			</div>
 		</div>
 		<!-- Main content area -->
 		<section id="main-section">
@@ -124,8 +145,10 @@
 		
 	</div>
 	
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+	<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>-->
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
 	<script src="js/sections_handler.js"></script>
 	<script src="js/animations.js"></script>
 	<script src="js/main.js"></script>

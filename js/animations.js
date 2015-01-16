@@ -50,9 +50,7 @@ var animations = (function(){
 				.fromTo('#development .btn-obj', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#development .btn-obj', 0.2, {scale:1},0.9)
 
-				.fromTo('#development .btn-dev-main', 0.6, {alpha:0}, {alpha: 1},0.3)
-				.fromTo('#development .btn-dev-main', 0.4, {scale:0.05}, {scale:1.3},0.3)
-				.to('#development .btn-dev-main', 0.2, {scale:1.1},0.8)
+				.fromTo('#development .btn-dev-main', 0.3, {left:-295, top:-270}, {left:210, top:10},0.1)
 
 				.fromTo('#development .btn-web', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#development .btn-web', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -77,32 +75,25 @@ var animations = (function(){
 				.fromTo('#development .contact-dev', 1, {scale:0.05}, {scale:1.3},0.4)
 				.to('#development .contact-dev', 0.2, {alpha:1, scale:1,onComplete: sectionsHandler.resolvePromise},1.6);
 		},
-
 		unbuild: function() {
 			var tl = new TimelineMax();
 			tl
 
 				.fromTo('.sign-dev', 0.6, {alpha:1}, {alpha: 0},0.1)
 
-				.fromTo('#development .btn-graph', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#development .btn-graph', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#development .btn-graph', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#development .btn-graph', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#development .btn-graph', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#development .btn-obj', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#development .btn-obj', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#development .btn-obj', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#development .btn-obj', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#development .btn-obj', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#development .btn-dev-main', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#development .btn-dev-main', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#development .btn-dev-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#development .btn-dev-main', 0.3, {left:210, top:10}, {left:-295, top:-270},0.1)
 
-				.fromTo('#development .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#development .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#development .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#development .btn-web', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#development .btn-web', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#development .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#development .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#development .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#development .btn-video', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#development .btn-video', 0.6, {scale:1}, {scale:0.05},0.3)
 
 				.to('#development .img-augmentedreality', 0.2, {left:780},0.1)
 				.to('#development .img-mobileapps', 0.2, {top:745},0.3)
@@ -140,9 +131,7 @@ var animations = (function(){
 				.fromTo('#video .btn-obj', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#video .btn-obj', 0.2, {scale:1},0.9)
 
-				.fromTo('#video .btn-video-main', 0.6, {alpha:0}, {alpha: 1},0.3)
-				.fromTo('#video .btn-video-main', 0.4, {scale:0.05}, {scale:1.3},0.3)
-				.to('#video .btn-video-main', 0.2, {scale:1.1},0.8)
+				.fromTo('#video .btn-video-main', 0.3, {left:-370, top:270}, {left:210, top:10},0.1)
 
 				.fromTo('#video .btn-web', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#video .btn-web', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -172,25 +161,19 @@ var animations = (function(){
 
 				.fromTo('.sign-video', 0.6, {alpha:1}, {alpha: 0},0.1)
 
-				.fromTo('#video .btn-graph', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#video .btn-graph', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#video .btn-graph', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#video .btn-graph', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#video .btn-graph', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#video .btn-obj', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#video .btn-obj', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#video .btn-obj', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#video .btn-obj', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#video .btn-obj', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#video .btn-video-main', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#video .btn-video-main', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#video .btn-video-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#video .btn-video-main', 0.3, {left:210, top:10}, {left:-370, top:270},0.1)
 
-				.fromTo('#video .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#video .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#video .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#video .btn-web', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#video .btn-web', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#video .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#video .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#video .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#video .btn-dev', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#video .btn-dev', 0.6, {scale:1}, {scale:0.05},0.3)
 
 				.to("#video .img-2d3danimations", 0.4, {top:0, left:-500},0.1)
 				.to("#video .img-commercials", 0.4, {left:0, top:-420},0.3)
@@ -226,9 +209,7 @@ var animations = (function(){
 				.fromTo('#web .btn-obj', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#web .btn-obj', 0.2, {scale:1},0.9)
 
-				.fromTo('#web .btn-web-main', 0.6, {alpha:0}, {alpha: 1},0.3)
-				.fromTo('#web .btn-web-main', 0.4, {scale:0.05}, {scale:1.3},0.3)
-				.to('#web .btn-web-main', 0.2, {scale:1.1},0.8)
+				.fromTo('#web .btn-web-main', 0.3, {left:210, top:-270}, {left:210, top:10},0.1)
 
 				.fromTo('#web .btn-dev', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#web .btn-dev', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -256,25 +237,19 @@ var animations = (function(){
 
 				.fromTo('.sign-web', 0.6, {alpha:1}, {alpha: 0},0.1)
 
-				.fromTo('#web .btn-graph', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#web .btn-graph', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#web .btn-graph', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#web .btn-graph', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#web .btn-graph', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#web .btn-obj', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#web .btn-obj', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#web .btn-obj', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#web .btn-obj', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#web .btn-obj', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#web .btn-web-main', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#web .btn-web-main', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#web .btn-web-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#web .btn-web-main', 0.3, {left:210, top:10}, {left:210, top:-270},0.1)
 
-				.fromTo('#web .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#web .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#web .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#web .btn-dev', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#web .btn-dev', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#web .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#web .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#web .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#web .btn-video', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#web .btn-video', 0.6, {scale:1}, {scale:0.05},0.3)
 
 				.to("#web .img-web", 0.5, {alpha:0},0.1)
 
@@ -298,6 +273,7 @@ var animations = (function(){
 				.to('#graphic', 0.1, {display: 'block', alpha:1})
 
 				.fromTo('.sign-graph', 0.2, {alpha:0}, {alpha: 1},0.1)
+				.from('.sign-graph', 0.8, {top:-435, ease:Quad.easeInOut}, 0.1)
 
 				.fromTo('#graphic .btn-web', 0.6, {alpha:0}, {alpha: 1},0.5)
 				.fromTo('#graphic .btn-web', 0.4, {scale:0.05}, {scale:1.3},0.5)
@@ -307,9 +283,7 @@ var animations = (function(){
 				.fromTo('#graphic .btn-obj', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#graphic .btn-obj', 0.2, {scale:1},0.9)
 
-				.fromTo('#graphic .btn-graph-main', 0.6, {alpha:0}, {alpha: 1},0.3)
-				.fromTo('#graphic .btn-graph-main', 0.4, {scale:0.05}, {scale:1.3},0.3)
-				.to('#graphic .btn-graph-main', 0.2, {scale:1.1},0.8)
+				.fromTo('#graphic .btn-graph-main', 0.3, {left:505, top:-270}, {left:210, top:10},0.1)
 
 				.fromTo('#graphic .btn-dev', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#graphic .btn-dev', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -319,7 +293,7 @@ var animations = (function(){
 				.fromTo('#graphic .btn-video', 0.4, {scale:0.05}, {scale:1.3},0.5)
 				.to('#graphic .btn-video', 0.2, {scale:1},1)
 
-				.fromTo("#graphic .img-graph", 0.5, {top:-560},{top:90},0.1)
+				.fromTo("#graphic .img-graph", 0.4, {top:-610},{top:90},0.1)
 
 				.fromTo("#graphic .btn-posters", 0.7, {top:815},{top:170},0.1)
 				.fromTo("#graphic .btn-illustrations", 0.7, {top:815},{top:245},0.3)
@@ -336,27 +310,21 @@ var animations = (function(){
 			tl
 				.fromTo('.sign-graph', 0.6, {alpha:1}, {alpha: 0},0.1)
 
-				.fromTo('#graphic .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#graphic .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#graphic .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#graphic .btn-web', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#graphic .btn-web', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#graphic .btn-obj', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#graphic .btn-obj', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#graphic .btn-obj', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#graphic .btn-obj', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#graphic .btn-obj', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#graphic .btn-graph-main', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#graphic .btn-graph-main', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#graphic .btn-graph-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#graphic .btn-graph-main', 0.3, {left:210, top:10}, {left:505, top:-270},0.1)
 
-				.fromTo('#graphic .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#graphic .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#graphic .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#graphic .btn-dev', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#graphic .btn-dev', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#graphic .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#graphic .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#graphic .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#graphic .btn-video', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#graphic .btn-video', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.to("#graphic .img-graph", 0.6, {top:-560},0.2)
+				.to("#graphic .img-graph", 0.6, {top:-610},0.2)
 
 				.to("#graphic .btn-posters", 0.7, {top:815},0.1)
 				.to("#graphic .btn-illustrations", 0.7, {top:815},0.3)
@@ -386,9 +354,7 @@ var animations = (function(){
 				.fromTo('#promotional .btn-web', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#promotional .btn-web', 0.2, {scale:1},0.9)
 
-				.fromTo('#promotional .btn-obj-main', 0.6, {alpha:0}, {alpha: 1},0.3)
-				.fromTo('#promotional .btn-obj-main', 0.4, {scale:0.05}, {scale:1.3},0.3)
-				.to('#promotional .btn-obj-main', 0.2, {scale:1.1},0.8)
+				.fromTo('#promotional .btn-obj-main', 0.3, {left:790, top:270}, {left:210, top:10},0.1)
 
 				.fromTo('#promotional .btn-dev', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#promotional .btn-dev', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -415,27 +381,21 @@ var animations = (function(){
 		unbuild: function() {
 			var tl = new TimelineMax();
 			tl
-				.fromTo('.sign-web', 0.6, {alpha:1}, {alpha: 0},0.1)
+				.fromTo('.sign-obj', 0.6, {alpha:1}, {alpha: 0},0.1)
 
-				.fromTo('#promotional .btn-graph', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#promotional .btn-graph', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#promotional .btn-graph', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#promotional .btn-graph', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#promotional .btn-graph', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#promotional .btn-web', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#promotional .btn-web', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#promotional .btn-web', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#promotional .btn-web', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#promotional .btn-web', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#promotional .btn-obj-main', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#promotional .btn-obj-main', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#promotional .btn-obj-main', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#promotional .btn-obj-main', 0.3, {left:210, top:10}, {left:-295, top:-270},0.1)
 
-				.fromTo('#promotional .btn-dev', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#promotional .btn-dev', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#promotional .btn-dev', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#promotional .btn-dev', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#promotional .btn-dev', 0.6, {scale:1}, {scale:0.05},0.3)
 
-				.fromTo('#promotional .btn-video', 0.2, {scale:1}, {scale: 1.3},0.2)
-				.fromTo('#promotional .btn-video', 0.4, {scale:1.3}, {scale:0},0.4)
-				.fromTo('#promotional .btn-video', 0.1, {alpha:1}, {alpha: 0},0.9)
+				.fromTo('#promotional .btn-video', 0.6, {alpha:1}, {alpha: 0},0.5)
+				.fromTo('#promotional .btn-video', 0.6, {scale:1}, {scale:0.05},0.3)
 
 				.to("#promotional .img-personalizedobjects", 0.7, {scale: 0},0.2)
 				.to("#promotional .img-merchandising", 0.7,{scale: 0},0.3)
@@ -445,7 +405,7 @@ var animations = (function(){
 				.to("#promotional .btn-merchandising", 0.7,{scale: 0},0.3)
 				.to("#promotional .btn-corporategifts", 0.7, {scale: 0},0.4)
 
-				.fromTo('#promotional .contact-web', 0.4, {alpha:1}, {alpha:0},0.3)
+				.fromTo('#promotional .contact-obj', 0.4, {alpha:1}, {alpha:0},0.3)
 
 				.to('#promotional', 0.1, {alpha:0})
 				.to('#promotional', 0.1, {display: 'none', onComplete: sectionsHandler.resolvePromise});
@@ -461,11 +421,11 @@ var animations = (function(){
 				.fromTo('#contact .cartel', 0.4, {left: -610, top: 570}, {left: 15, top: 190},0.2)
 				.fromTo('#contact .submit', 0.4, {alpha:0}, {alpha:1, onComplete: sectionsHandler.resolvePromise},0.7)
 				.fromTo('#contact .branch', 0.3, {left: 430, top: 815}, {left: 430, top: 380},0.3)
-				.fromTo('#contact .btn-contact-promotional', 0.2, {left: 790, top: 475}, {left: 370, top: 475},0.5)
-				.fromTo('#contact .btn-contact-web', 0.2, {left: 790, top: 370}, {left: 430, top: 370},0.5)
-				.fromTo('#contact .btn-contact-video', 0.2, {left: 790, top: 395}, {left: 375, top: 395},0.6)
-				.fromTo('#contact .btn-contact-development', 0.2, {left: 790, top: 424}, {left: 430, top: 424},0.6)
-				.fromTo('#contact .btn-contact-graphic', 0.2, {left: 790, top: 437}, {left: 343, top: 437},0.6);
+				.fromTo('#contact .btn-contact-promotional', 0.2, {left: 790, top: 475}, {left: 425, top: 485},0.5)
+				.fromTo('#contact .btn-contact-web', 0.2, {left: 790, top: 370}, {left: 425, top: 370},0.5)
+				.fromTo('#contact .btn-contact-video', 0.2, {left: 790, top: 395}, {left: 425, top: 425},0.6)
+				.fromTo('#contact .btn-contact-development', 0.2, {left: 790, top: 424}, {left: 350, top: 455},0.6)
+				.fromTo('#contact .btn-contact-graphic', 0.2, {left: 790, top: 437}, {left: 340, top: 395},0.6);
 		},
 
 		unbuild: function() {
@@ -474,12 +434,12 @@ var animations = (function(){
 				.to('#contact .poster', 0.1, {left: 55, top: -390},0.1)
 				.to('#contact .cartel', 0.4, {left: -610, top: 570},0.3)
 				.to('#contact .submit', 0.4, {alpha:0}, {alpha:1},0.8)
-				.to('#contact .branch', 0.3, {left: 430, top: 815},0.4)
-				.to('#contact .btn-contact-promotional', 0.2, {left: 790, top: 475},0.6)
-				.to('#contact .btn-contact-web', 0.2, {left: 790, top: 370},0.5)
-				.to('#contact .btn-contact-video', 0.2, {left: 790, top: 395},0.6)
-				.to('#contact .btn-contact-development', 0.2, {left: 790, top: 424},0.6)
-				.to('#contact .btn-contact-graphic', 0.2, {left: 790, top: 437},0.6)
+				.to('#contact .branch', 0.3, {left: 790, top: 815},0.4)
+				.to('#contact .btn-contact-promotional', 0.2, {left: 790, top: 475},0.5)
+				.to('#contact .btn-contact-web', 0.2, {left: 790, top: 370},0.1)
+				.to('#contact .btn-contact-video', 0.2, {left: 790, top: 395},0.2)
+				.to('#contact .btn-contact-development', 0.2, {left: 790, top: 424},0.3)
+				.to('#contact .btn-contact-graphic', 0.2, {left: 790, top: 437},0.4)
 
 				.to('#contact', 0.1, {alpha:0})
 				.to('#contact', 0.1, {display: 'none', onComplete: sectionsHandler.resolvePromise});

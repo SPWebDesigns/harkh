@@ -7,8 +7,9 @@
  *****************************/
 /* change the ID & dimensions to match your slider */
 #slider {
-	width: 375px;
-	height: 235px;
+	width: 300px;
+	height: 285px;
+	 top: 25px;
 	list-style: none;
 	/* Prevent FOUC (see FAQ page) and keep things readable if javascript is disabled */
 	overflow-y: auto;
@@ -83,6 +84,7 @@
 /* slider window - top & bottom borders, active state */
 .anythingSlider-metallic.activeSlider .anythingWindow {
 	border-color: #0355a3;
+	top:12px;
 }
 
 /* Navigation buttons, active state */
@@ -117,7 +119,7 @@
  ************************/
 /* Navigation Arrows */
 .anythingSlider-metallic .arrow {
-	top: 50%;
+	top: 25px;
 	position: absolute;
 	display: block;
 	z-index: 100;
@@ -125,24 +127,21 @@
 
 .anythingSlider-metallic .arrow a {
 	display: block;
-	width: 45px;
-	height: 95px;
-	margin: -47.5px 0 0 0; /* half height of image */
+	width: 70px;
+	height: 275px;
+	/* margin: -47.5px 0 0 0; half height of image */
 	text-align: center;
 	outline: 0;
-	background: url(../images/arrows-metallic.png) no-repeat;
 }
 
 /* back arrow */
-.anythingSlider-metallic .back { left: 0; }
-.anythingSlider-metallic .back a { background-position: left bottom; }
-.anythingSlider-metallic .back a:hover,
-.anythingSlider-metallic .back a.hover { background-position: left top; }
+.anythingSlider-metallic .back { left: -72px; }
+.anythingSlider-metallic .back a { background: url(../img/gallery/left-arrow.png) no-repeat;width: 70px;
+	height: 275px; }
 /* forward arrow */
-.anythingSlider-metallic .forward { right: 0; }
-.anythingSlider-metallic .forward a { background-position: right bottom; }
-.anythingSlider-metallic .forward a:hover,
-.anythingSlider-metallic .forward a.hover { background-position: right top; }
+.anythingSlider-metallic .forward { right: -62px; }
+.anythingSlider-metallic .forward a { background: url(../img/gallery/right-arrow.png) no-repeat; width: 70px;
+	height: 275px;}
 
 /* Navigation Links */
 .anythingSlider-metallic .anythingControls {
