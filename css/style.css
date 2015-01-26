@@ -16,6 +16,15 @@
 
 	background-image:url(../img/backgroundMain.jpg);
 }
+#index #wrapper{
+    position:relative;
+    margin:0 auto;
+    width:1024px;
+    height:1024px;
+    overflow: hidden;
+
+    background-image:url(../img/backgroundMain-index.jpg);
+}
 #welcome{
 	background-image: url(../img/welcome2.png);
     height: 384px;
@@ -64,6 +73,14 @@
 	display: none;
 }
 
+
+.mailto{
+    height: 60px;
+    position: absolute;
+    top: 23px;
+    width: 216px;
+}
+
 /*---------------------------------- Choosing -----------------------*/
 .choosing{
     height: 500px;
@@ -106,14 +123,14 @@
 
 .video-main .btn-graph{position: absolute; background-image:url(../img/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
 .video-main .btn-graph:hover{cursor: pointer; opacity: 0.8;  }
-.video-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.video-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 90px; top: 15px;}
 .video-main .btn-obj:hover{cursor: pointer; opacity: 0.8;  }
 .video-main .btn-video-main{position: absolute; background-image:url(../img/video/btn-video-main.png); z-index: 2; width: 98px; height: 42px; left: 210px; top: 10px;}
-.video-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.video-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 32px; left: 340px; top: 15px;}
 .video-main .btn-web:hover{cursor: pointer; opacity: 0.8;  }
 .video-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
 .video-main .btn-dev:hover{cursor: pointer; opacity: 0.8;  }
-.video-main .sign-video{position: absolute; background-image:url(../img/video/sign-video.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+.video-main .sign-video{position: absolute; background-image:url(../img/video/sign-video.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 20px;}
 
 .video-main .btn-videoproductions{position: absolute; background-image:url(../img/video/btn-videoproductions.png); z-index: 2; width: 92px; height: 41px; left:195px; top: 130px;}
 .video-main .img-videoproductions{position: absolute; background-image:url(../img/video/img-videoproductions.png); z-index: 1; width: 177px; height: 285px; left: 75px; top: 150px;}
@@ -135,14 +152,14 @@
 
 .development-main .btn-graph{position: absolute; background-image:url(../img/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
 .development-main .btn-graph:hover{cursor: pointer; opacity: 0.8;  }
-.development-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.development-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 90px; top: 15px;}
 .development-main .btn-obj:hover{cursor: pointer; opacity: 0.8;  }
 .development-main .btn-dev-main{position: absolute; background-image:url(../img/dev/btn-dev-main.png); z-index: 2; width: 97px; height: 42px; left: 210px; top: 10px;}
-.development-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.development-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 32px; left: 340px; top: 15px;}
 .development-main .btn-web:hover{cursor: pointer; opacity: 0.8;  }
 .development-main .btn-video{position: absolute; background-image:url(../img/btn-video.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
 .development-main .btn-video:hover{cursor: pointer; opacity: 0.8;  }
-.development-main .sign-dev{position: absolute; background-image:url(../img/dev/sign-dev.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+.development-main .sign-dev{position: absolute; background-image:url(../img/dev/sign-dev.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 20px;}
 
 .development-main .img-augmentedreality{position: absolute; background-image:url(../img/dev/img-augmentedreality.png); z-index: 1; width: 180px; height: 176px; left: 80px; top: 145px;}
 .development-main .img-mobileapps{position: absolute; background-image:url(../img/dev/img-mobileapps.png); z-index: 1; width: 113px; height: 100px; left: 245px; top: 220px;}
@@ -166,14 +183,14 @@
 
 .web-main .btn-graph{position: absolute; background-image:url(../img/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
 .web-main .btn-graph:hover{cursor: pointer; opacity: 0.8;  }
-.web-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.web-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 90px; top: 15px;}
 .web-main .btn-obj:hover{cursor: pointer; opacity: 0.8;  }
 .web-main .btn-web-main{position: absolute; background-image:url(../img/web/btn-web-main.png); z-index: 2; width: 98px; height: 42px; left: 210px; top: 10px;}
-.web-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.web-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 340px; top: 15px;}
 .web-main .btn-dev:hover{cursor: pointer; opacity: 0.8;  }
 .web-main .btn-video{position: absolute; background-image:url(../img/btn-video.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
 .web-main .btn-video:hover{cursor: pointer; opacity: 0.8;  }
-.web-main .sign-web{position: absolute; background-image:url(../img/web/sign-web.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+.web-main .sign-web{position: absolute; background-image:url(../img/web/sign-web.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 20px;}
 
 .web-main .img-web{position: absolute; background-image:url(../img/web/img-web.png); z-index: 1; width: 263px; height: 398px; left: 130px; top: 110px;}
 .web-main .btn-seopositioning{position: absolute; background-image:url(../img/web/btn-seopositioning.png); z-index: 2; width: 88px; height: 42px; left:305px; top: 160px;}
@@ -194,14 +211,14 @@
 
 .graphic-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
 .graphic-main .btn-web:hover{cursor: pointer; opacity: 0.8;  }
-.graphic-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.graphic-main .btn-obj{position: absolute; background-image:url(../img/btn-obj.png); z-index: 2; width: 91px; height: 35px; left: 90px; top: 15px;}
 .graphic-main .btn-obj:hover{cursor: pointer; opacity: 0.8;  }
 .graphic-main .btn-graph-main{position: absolute; background-image:url(../img/graph/btn-graph-main.png); z-index: 2; width: 97px; height: 42px; left: 210px; top: 10px;}
-.graphic-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.graphic-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 340px; top: 15px;}
 .graphic-main .btn-dev:hover{cursor: pointer; opacity: 0.8;  }
 .graphic-main .btn-video{position: absolute; background-image:url(../img/btn-video.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
 .graphic-main .btn-video:hover{cursor: pointer; opacity: 0.8;  }
-.graphic-main .sign-graph{position: absolute; background-image:url(../img/graph/sign-graph.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+.graphic-main .sign-graph{position: absolute; background-image:url(../img/graph/sign-graph.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 20px;}
 
 .graphic-main .img-graph{position: absolute; background-image:url(../img/graph/img-graph.png); z-index: 1; width: 341px; height: 393px; left: 90px; top: 95px;}
 .graphic-main .btn-posters{position: absolute; background-image:url(../img/graph/btn-posters.png); z-index: 2; width: 64px; height: 28px; left:95px; top: 170px;}
@@ -222,14 +239,14 @@
 
 .promotional-main .btn-graph{position: absolute; background-image:url(../img/btn-graph.png); z-index: 2; width: 91px; height: 32px; left: -10px; top: 15px;}
 .promotional-main .btn-graph:hover{cursor: pointer; opacity: 0.8;  }
-.promotional-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 35px; left: 100px; top: 15px;}
+.promotional-main .btn-web{position: absolute; background-image:url(../img/btn-web.png); z-index: 2; width: 91px; height: 35px; left: 90px; top: 15px;}
 .promotional-main .btn-web:hover{cursor: pointer; opacity: 0.8;  }
 .promotional-main .btn-obj-main{position: absolute; background-image:url(../img/obj/btn-obj-main.png); z-index: 2; width: 97px; height: 42px; left: 210px; top: 10px;}
-.promotional-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 325px; top: 15px;}
+.promotional-main .btn-dev{position: absolute; background-image:url(../img/btn-dev.png); z-index: 2; width: 91px; height: 32px; left: 340px; top: 15px;}
 .promotional-main .btn-dev:hover{cursor: pointer; opacity: 0.8;  }
 .promotional-main .btn-video{position: absolute; background-image:url(../img/btn-video.png); z-index: 2; width: 92px; height: 32px; left: 435px; top: 15px;}
 .promotional-main .btn-video:hover{cursor: pointer; opacity: 0.8;  }
-.promotional-main .sign-obj{position: absolute; background-image:url(../img/obj/sign-obj.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 30px;}
+.promotional-main .sign-obj{position: absolute; background-image:url(../img/obj/sign-obj.png); z-index: 2; width: 216px; height: 81px; left: 150px; top: 20px;}
 
 .promotional-main .img-personalizedobjects{position: absolute; background-image:url(../img/obj/img-personalizedobjects.png); z-index: 1; width: 190px; height: 194px; left: 265px; top: 135px;}
 .promotional-main .img-merchandising{position: absolute; background-image:url(../img/obj/img-merchandising.png); z-index: 1; width: 206px; height: 245px; left: 40px; top: 235px;}

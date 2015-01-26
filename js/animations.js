@@ -50,7 +50,7 @@ var animations = (function(){
 				.fromTo('#development .btn-obj', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#development .btn-obj', 0.2, {scale:1},0.9)
 
-				.fromTo('#development .btn-dev-main', 0.3, {left:-295, top:-270}, {left:210, top:10},0.1)
+				.fromTo('#development .btn-dev-main', 0.3, {left:-295, top:-270}, {left:210, top:0},0.1)
 
 				.fromTo('#development .btn-web', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#development .btn-web', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -131,7 +131,7 @@ var animations = (function(){
 				.fromTo('#video .btn-obj', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#video .btn-obj', 0.2, {scale:1},0.9)
 
-				.fromTo('#video .btn-video-main', 0.3, {left:-370, top:270}, {left:210, top:10},0.1)
+				.fromTo('#video .btn-video-main', 0.3, {left:-370, top:270}, {left:210, top:0},0.1)
 
 				.fromTo('#video .btn-web', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#video .btn-web', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -209,7 +209,7 @@ var animations = (function(){
 				.fromTo('#web .btn-obj', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#web .btn-obj', 0.2, {scale:1},0.9)
 
-				.fromTo('#web .btn-web-main', 0.3, {left:210, top:-270}, {left:210, top:10},0.1)
+				.fromTo('#web .btn-web-main', 0.3, {left:210, top:-270}, {left:210, top:0},0.1)
 
 				.fromTo('#web .btn-dev', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#web .btn-dev', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -283,7 +283,7 @@ var animations = (function(){
 				.fromTo('#graphic .btn-obj', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#graphic .btn-obj', 0.2, {scale:1},0.9)
 
-				.fromTo('#graphic .btn-graph-main', 0.3, {left:505, top:-270}, {left:210, top:10},0.1)
+				.fromTo('#graphic .btn-graph-main', 0.3, {left:505, top:-270}, {left:210, top:0},0.1)
 
 				.fromTo('#graphic .btn-dev', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#graphic .btn-dev', 0.4, {scale:0.05}, {scale:1.3},0.4)
@@ -354,7 +354,7 @@ var animations = (function(){
 				.fromTo('#promotional .btn-web', 0.4, {scale:0.05}, {scale:1.3},0.4)
 				.to('#promotional .btn-web', 0.2, {scale:1},0.9)
 
-				.fromTo('#promotional .btn-obj-main', 0.3, {left:790, top:270}, {left:210, top:10},0.1)
+				.fromTo('#promotional .btn-obj-main', 0.3, {left:790, top:270}, {left:210, top:0},0.1)
 
 				.fromTo('#promotional .btn-dev', 0.6, {alpha:0}, {alpha: 1},0.4)
 				.fromTo('#promotional .btn-dev', 0.4, {scale:0.05}, {scale:1.3},0.4)
