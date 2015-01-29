@@ -16,7 +16,8 @@ $(document).ready(function () {
 		$('#wrapper').find('#contact').removeClass().addClass(sec);
 		$('#wrapper').find('#gallery-page, #gallery-page-graph, #gallery-page-video').removeClass().addClass(sec);
 		setTimeout(function() {
-	      $('#contact .poster').css("background-image", "url(img/contact-us/poster-"+sec+".png");
+	      $('#contact .poster').css('background-image', 'url("img/contact-us/poster-'+sec+'.png")');
+	      	$('body').css('background-image','url("/static/img/b1_left.png")');
 		}, 1000);
 	}
 	function resetForm(){
